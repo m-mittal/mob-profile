@@ -1,6 +1,8 @@
 <html>
 
 <head>
+    <link rel="preload" href="./buddha.jpg" as="image">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kalam|Seymour+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kalam|Open+Sans+Condensed:300|Seymour+One&display=swap"
         rel="stylesheet">
@@ -21,7 +23,8 @@
 
         #main {
             /* position: fixed; */
-            border: 6px solid #a52a2a;;
+            border: 6px solid #a52a2a;
+            ;
             border-radius: 150px;
             width: 98%;
             bottom: 2px;
@@ -32,10 +35,13 @@
             margin-left: auto;
             margin-right: auto;
             background-color: #f0fff0;
+            padding-left: 2px;
+            padding-right: 2px;
         }
 
         #main h1 {
-            font-family: 'Seymour One', sans-serif;
+            /* font-family: 'Seymour One', sans-serif; */
+            font-family: 'Open Sans', sans-serif;
             font-size: 9vw;
             text-decoration: underline;
             margin-bottom: 0px;
@@ -64,7 +70,7 @@
         .title {
             width: 100%;
             height: 60px;
-            background-color: gainsboro;
+            background-color: #add8e6;
             /* border: 2px solid gray; */
         }
 
@@ -76,11 +82,11 @@
             margin-top: -20px;
         }
 
-        .title #img_cntct{
+        .title #img_cntct {
             margin-top: -20px;
         }
 
-        .cntnr{
+        .cntnr {
             margin-top: 50px;
         }
 
@@ -100,7 +106,7 @@
             font-size: 0.8em;
         }
 
-        .code-skill{
+        .code-skill {
             display: flex;
             justify-content: space-evenly;
             padding-top: 40px;
@@ -109,23 +115,23 @@
             padding-right: 40px;
         }
 
-        .code-skill .img_skl{
+        .code-skill .img_skl {
             height: 100px;
             width: 145px;
             object-fit: contain;
             overflow: hidden;
         }
 
-        .code-skill .icon_java{
+        .code-skill .icon_java {
             height: 140px !important;
             margin-top: -20px !important;
         }
 
-        .title_cntnct{
+        .title_cntnct {
             margin-bottom: 30px;
         }
 
-        .cntnct_line{
+        .cntnct_line {
             display: flex;
             /* align-items: center; */
             /* margin-top: 20px;
@@ -134,17 +140,33 @@
             margin-top: 10px;
         }
 
-        .cntnct_line .icon_cntnct{
+        .cntnct_line .icon_cntnct {
             height: 70px;
         }
 
-        .cntnct_line h6{
+        .cntnct_line h6 {
             display: inline;
             font-size: 2.5em;
             margin-bottom: 0px;
             /* margin-top: 10px; */
             /* vertical-align: middle; */
             padding-top: 8px;
+        }
+
+        #loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #e6e6fa;
+            font-family: cursive;
+            color: #8b008b;
+            font-size: 4em;
+        }
+
+        #loading img {
+            object-fit: contain;
         }
     </style>
 </head>
@@ -173,30 +195,31 @@
                 <img id="img-code" src="./icons/code_100h.png" />
             </div>
             <div class="code-skill">
-                <img class="img_skl" src="./icons/js_40h.png" />
-                <img class="img_skl" src="./icons/ng_40h.png" />
+                <img class="img_skl" src="./icons/js_145h.png" />
+                <img class="img_skl" src="./icons/ng_155h.png" />
                 <img class="img_skl" src="./icons/react.png" />
-                <img class="img_skl" src="./icons/PWA_20h.png" />
+                <img class="img_skl" src="./icons/PWA_100h.png" />
             </div>
             <div class="code-skill">
-                <img class="img_skl" src="./icons/es6_40h.png" />
-                <img class="img_skl" src="./icons/git_30h.png" />
-                <img class="img_skl" src="./icons/scss_40h.png" />
+                <img class="img_skl" src="./icons/es6_145h.png" />
+                <img class="img_skl" src="./icons/git_100h.png" />
+                <img class="img_skl" src="./icons/scss_109h.png" />
             </div>
             <div class="code-skill">
-                <img class="img_skl" src="./icons/node_40h.png" />
-                <img class="img_skl" src="./icons/html5_40h.png" />
-                <img class="img_skl" src="./icons/css3_40h.png" />
-                <img class="img_skl icon_java" src="./icons/java.png" />
+                <img class="img_skl" src="./icons/node_100h.png" />
+                <img class="img_skl" src="./icons/html5_145h.png" />
+                <img class="img_skl" src="./icons/css3_205h.png" />
+                <img class="img_skl icon_java" src="./icons/java_265.png" />
             </div>
         </div>
 
         <div class="cntnr">
             <div class="title title_cntnct">
-                <img id="img_cntct"src="./icons/contact_100h.png" />
+                <img id="img_cntct" src="./icons/contact_100h.png" />
             </div>
             <div class="cntnct_line">
-                <a href="https://goo.gl/maps/vQY2f79PAVmghMYM6" target="_blank"><img class="icon_cntnct" src="./icons/location.svg" /></a>
+                <a href="https://goo.gl/maps/vQY2f79PAVmghMYM6" target="_blank"><img class="icon_cntnct"
+                        src="./icons/location.svg" /></a>
                 <h6>&nbsp; <strong>..</strong> &nbsp; Pune</h6>
             </div>
             <div class="cntnct_line">
@@ -208,11 +231,13 @@
                 <h6>&nbsp; <strong>..</strong> &nbsp; hellomittal.mohit@yahoo.co.in</h6>
             </div>
             <div class="cntnct_line">
-                <a href="https://m-mittal.github.io/web-profile/Resume.pdf" target="_blank"><img class="icon_cntnct" src="./icons/download.png" /></a>
+                <a href="https://m-mittal.github.io/web-profile/Resume.pdf" target="_blank"><img class="icon_cntnct"
+                        src="./icons/download.png" /></a>
                 <h6>&nbsp; <strong>..</strong> &nbsp; Download Resume</h6>
             </div>
             <div class="cntnct_line">
-                <a href="https://www.linkedin.com/in/m-mittal" target="_blank"><img class="icon_cntnct" src="./icons/linkedin_1.png" /></a>
+                <a href="https://www.linkedin.com/in/m-mittal" target="_blank"><img class="icon_cntnct"
+                        src="./icons/linkedin_1.png" /></a>
                 <h6>&nbsp; <strong>..</strong> &nbsp; LinkedIn</h6>
             </div>
 
@@ -220,6 +245,25 @@
         </div>
 
     </div>
+
+    <div id="loading">
+        <img src="./buddha.jpg" alt="Have Patience !!" />
+        <br><br>
+        <h2>Patience !</h2>
+    </div>
+
+
+    <script>
+        !function () {
+            if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
+                window.location.replace("https://m-mittal.github.io/");
+            }
+        }();
+
+        window.onload = function () {
+            document.getElementById("loading").style.display = "none";
+        }
+    </script>
 
 </body>
 
